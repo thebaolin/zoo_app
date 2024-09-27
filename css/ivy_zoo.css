@@ -1,0 +1,49 @@
+body {
+  font-family: Courier New;
+  background-color: rgb(186, 212, 193);
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.animalButton {
+  background-color: rgb(123, 202, 129);
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 30px;
+  border-radius: 10px;
+  height: 150px;
+  width: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  align-content: center;
+  text-decoration: none;
+
+}
+
+.animalButton:hover{
+  background-color: rgb(40, 77, 40);
+  box-shadow:inset;
+  
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 120px;                   
+  margin: 0 auto; 
+  max-width: fit-content;
+
+
+  
+}
