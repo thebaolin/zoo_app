@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulina's Zoo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .animal-card {
+            perspective: 1000px;
+            width: 100%;
+        }
+
+        .animal-card-inner {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .animal-card:hover .animal-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .animal-card-front, .animal-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+        }
+
+        .animal-card-front {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .animal-card-back {
+            background-color: #fff;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Animal 1 -->
+        <div class="animal-card">
+            <div class="animal-card-inner">
+                <div class="animal-card-front" style="background-image: url('img/indian_flying_squirrel.jpg');">
+                </div>
+                <div class="animal-card-back">
+                    <h2>Indian Giant Flying Squirrel</h2>
+                    <p>The Indian giant flying squirrel (Petaurista philippensis), also called the large brown flying squirrel or the common giant flying squirrel, is a species of rodent in the family Sciuridae. It is capable of gliding flight using a skin membrane, the patagium, stretched between front and hind legs. It is found in mainland Southeast and South Asia, and southern and central China.
+
+                        This is a large species, with a head and body length of about 43 cm and a tail of 50–52 cm. It has black to gray-brown fur, long and soft on the upper parts and somewhat shorter underneath the body, with a grizzled appearance. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animal 2 -->
+        <div class="animal-card">
+            <div class="animal-card-inner">
+                <div class="animal-card-front" style="background-image: url('img/pink_armadillo.webp');">
+                </div>
+                <div class="animal-card-back">
+                    <h2>Pink Fairy Armadillo</h2>
+                    <p>The pink fairy armadillo is the smallest species of armadillo. Pink fairy armadillos have small eyes, silky yellowish white fur, and flexible dorsal shells that are attached to their bodies solely by thin dorsal membranes. 
+                        It has a unique ability to bury itself in a matter of seconds, using its specialized claws to dig into sandy or loamy soils. This behavior helps protect the armadillo from predators and extreme temperatures, as well as conserve moisture in its arid habitat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animal 3 -->
+        <div class="animal-card">
+            <div class="animal-card-inner">
+                <div class="animal-card-front" style="background-image: url('img/capybara_face.jpg');">
+                </div>
+                <div class="animal-card-back">
+                    <h2>Capybara</h2>
+                    <p>The capybara is the largest living rodent, native to South America.
+                        The capybara inhabits savannas and dense forests, and lives near bodies of water. It is a highly social species and can be found in groups as large as 100 individuals, but usually live in groups of 10–20 individuals. The capybara is hunted for its meat and hide and also for grease from its thick fatty skin.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animal 4 -->
+        <div class="animal-card">
+            <div class="animal-card-inner">
+                <div class="animal-card-front" style="background-image: url('img/blobfish.jpg');">
+                </div>
+                <div class="animal-card-back">
+                    <h2>Blobfish</h2>
+                    <p>The blobfish is jelly-like and inflates to float around, it eats by waiting for dead organisms to drift down. It has been adopted as the mascot of the UAPS, or Ugly Animal Preservation Society (Yes, it's a real thing!).
+                        Blobfish have experienced a major threat to their populations in recent years. Though not much information is known about the species, it is well known that due to being frequent bycatch (unintentionally caught fish) in fishing nets, they could all be declared endangered soon.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
