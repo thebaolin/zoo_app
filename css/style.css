@@ -1,0 +1,106 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(227, 194, 194);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-left li {
+    padding: 8px 12px;
+}
+
+.menu-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-left a:hover {
+    color: #ddd;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main container */
+.container {
+    padding: 50px 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px;
+}
+
+.link a {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(227, 194, 194);
+    background-color: #333;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.link a:hover {
+    background-color: #f9f4f8;
+    transform: scale(1.05);
+}
+
+/* Add some flair */
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #666;
+    line-height: 1.8;
+}
